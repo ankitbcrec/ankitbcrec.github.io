@@ -1,7 +1,24 @@
-import Link from 'next/link'
+'use client'
+
 import { Mail, Phone, MapPin, Github, Linkedin } from 'lucide-react'
 
 export default function Footer() {
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault()
+    
+    const element = document.querySelector(href)
+    if (element) {
+      const offset = 80 // Height of navbar
+      const elementPosition = element.getBoundingClientRect().top
+      const offsetPosition = elementPosition + window.pageYOffset - offset
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      })
+    }
+  }
+
   return (
     <footer className="bg-slate-950 border-t border-slate-800">
       <div className="container mx-auto px-4 py-12">
@@ -37,24 +54,40 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/about" className="text-slate-400 hover:text-primary-400 transition-colors">
+                <a 
+                  href="#about" 
+                  onClick={(e) => handleClick(e, '#about')}
+                  className="text-slate-400 hover:text-primary-400 transition-colors cursor-pointer"
+                >
                   About Me
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="/experience" className="text-slate-400 hover:text-primary-400 transition-colors">
+                <a 
+                  href="#experience" 
+                  onClick={(e) => handleClick(e, '#experience')}
+                  className="text-slate-400 hover:text-primary-400 transition-colors cursor-pointer"
+                >
                   Experience
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="/projects" className="text-slate-400 hover:text-primary-400 transition-colors">
+                <a 
+                  href="#projects" 
+                  onClick={(e) => handleClick(e, '#projects')}
+                  className="text-slate-400 hover:text-primary-400 transition-colors cursor-pointer"
+                >
                   Projects
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="/contact" className="text-slate-400 hover:text-primary-400 transition-colors">
+                <a 
+                  href="#contact" 
+                  onClick={(e) => handleClick(e, '#contact')}
+                  className="text-slate-400 hover:text-primary-400 transition-colors cursor-pointer"
+                >
                   Contact
-                </Link>
+                </a>
               </li>
             </ul>
           </div>

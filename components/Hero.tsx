@@ -6,6 +6,20 @@ import { ArrowRight, Download, Mail } from 'lucide-react'
 import { motion } from 'framer-motion'
 
 export default function Hero() {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.querySelector(sectionId)
+    if (element) {
+      const offset = 80 // Height of navbar
+      const elementPosition = element.getBoundingClientRect().top
+      const offsetPosition = elementPosition + window.pageYOffset - offset
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      })
+    }
+  }
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background gradient effects */}
@@ -56,18 +70,24 @@ export default function Hero() {
                 transition={{ duration: 0.5, delay: 0.3 }}
                 className="flex flex-wrap justify-center lg:justify-start gap-4"
               >
-                <Link href="/projects" className="btn-primary inline-flex items-center">
+                <button 
+                  onClick={() => scrollToSection('#projects')}
+                  className="btn-primary inline-flex items-center"
+                >
                   View Projects
                   <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
+                </button>
                 <button className="btn-secondary inline-flex items-center">
                   <Download className="mr-2 h-5 w-5" />
                   Download Resume
                 </button>
-                <Link href="/contact" className="btn-secondary inline-flex items-center">
+                <button 
+                  onClick={() => scrollToSection('#contact')}
+                  className="btn-secondary inline-flex items-center"
+                >
                   <Mail className="mr-2 h-5 w-5" />
                   Contact Me
-                </Link>
+                </button>
               </motion.div>
             </div>
 
