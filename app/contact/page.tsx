@@ -58,7 +58,7 @@ export default function ContactPage() {
             <h3 className="text-2xl font-bold text-white mb-6">Connect With Me</h3>
             <div className="flex gap-4">
               <a
-                href="https://github.com/ankitchakraborty"
+                href="https://github.com/ankitbcrec"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="card flex items-center justify-center w-16 h-16 hover:scale-110 transition-transform"
@@ -66,7 +66,7 @@ export default function ContactPage() {
                 <Github className="h-8 w-8 text-primary-400" />
               </a>
               <a
-                href="https://linkedin.com/in/ankitchakraborty"
+                href="https://www.linkedin.com/in/ankit-chakraborty-obrm/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="card flex items-center justify-center w-16 h-16 hover:scale-110 transition-transform"

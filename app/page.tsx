@@ -572,7 +572,7 @@ export default function Home() {
             subtitle="Let's build something amazing together"
           />
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <div className="space-y-6">
               <div className="card">
                 <h3 className="text-2xl font-bold text-white mb-6">Contact Information</h3>
@@ -619,7 +619,7 @@ export default function Home() {
                 <h3 className="text-2xl font-bold text-white mb-6">Connect With Me</h3>
               <div className="flex gap-4">
                 <a
-                  href="https://github.com/ankitchakraborty"
+                  href="https://github.com/ankitbcrec"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="card flex items-center justify-center w-16 h-16 hover:scale-110 transition-transform"
@@ -627,7 +627,7 @@ export default function Home() {
                   <Github className="h-8 w-8 text-primary-400" />
                 </a>
                 <a
-                  href="https://linkedin.com/in/ankitchakraborty"
+                  href="https://www.linkedin.com/in/ankit-chakraborty-obrm/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="card flex items-center justify-center w-16 h-16 hover:scale-110 transition-transform"
@@ -636,43 +636,41 @@ export default function Home() {
                 </a>
                 </div>
               </div>
-
-              <div className="card">
-                <h3 className="text-2xl font-bold text-white mb-6">Availability</h3>
-              <p className="text-slate-300 mb-2">
-                Open to exciting opportunities in:
-              </p>
-              <ul className="space-y-2">
-                <li className="text-slate-300 flex items-start">
-                  <span className="text-primary-400 mr-2">▹</span>
-                  Engineering Leadership Roles
-                </li>
-                <li className="text-slate-300 flex items-start">
-                  <span className="text-primary-400 mr-2">▹</span>
-                  Billing Platform Architecture
-                </li>
-                <li className="text-slate-300 flex items-start">
-                  <span className="text-primary-400 mr-2">▹</span>
-                  AI/ML Engineering
-                </li>
-                <li className="text-slate-300 flex items-start">
-                  <span className="text-primary-400 mr-2">▹</span>
-                  SaaS Product Development
-                </li>
-                <li className="text-slate-300 flex items-start">
-                  <span className="text-primary-400 mr-2">▹</span>
-                  Consulting & Advisory
-                </li>
-                </ul>
-              </div>
             </div>
 
-            <div>
-              <div className="card">
-                <h3 className="text-2xl font-bold text-white mb-6">Send a Message</h3>
-                <ContactForm />
-              </div>
+            <div className="card h-fit">
+              <h3 className="text-2xl font-bold text-white mb-6">Send a Message</h3>
+              <ContactForm />
             </div>
+          </div>
+
+          <div className="card mt-6">
+            <h3 className="text-2xl font-bold text-white mb-6">Availability</h3>
+            <p className="text-slate-300 mb-2">
+              Open to exciting opportunities in:
+            </p>
+            <ul className="space-y-2">
+              <li className="text-slate-300 flex items-start">
+                <span className="text-primary-400 mr-2">▹</span>
+                Engineering Leadership Roles
+              </li>
+              <li className="text-slate-300 flex items-start">
+                <span className="text-primary-400 mr-2">▹</span>
+                Billing Platform Architecture
+              </li>
+              <li className="text-slate-300 flex items-start">
+                <span className="text-primary-400 mr-2">▹</span>
+                AI/ML Engineering
+              </li>
+              <li className="text-slate-300 flex items-start">
+                <span className="text-primary-400 mr-2">▹</span>
+                SaaS Product Development
+              </li>
+              <li className="text-slate-300 flex items-start">
+                <span className="text-primary-400 mr-2">▹</span>
+                Consulting & Advisory
+              </li>
+            </ul>
           </div>
         </div>
       </section>

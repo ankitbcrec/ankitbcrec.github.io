@@ -77,7 +77,10 @@ export default function Hero() {
                   View Projects
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </button>
-                <button className="btn-secondary inline-flex items-center">
+                <button 
+                  onClick={() => window.open('/resume.pdf', '_blank')}
+                  className="btn-secondary inline-flex items-center"
+                >
                   <Download className="mr-2 h-5 w-5" />
                   Download Resume
                 </button>

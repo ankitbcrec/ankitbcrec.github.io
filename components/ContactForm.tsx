@@ -12,8 +12,19 @@ export default function ContactForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Placeholder - no actual submission
-    alert('This is a demo form. In production, this would send your message.')
+    
+    // Create mailto link with form data
+    const subject = encodeURIComponent(`Portfolio Contact from ${formData.name}`)
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\n` +
+      `Email: ${formData.email}\n\n` +
+      `Message:\n${formData.message}`
+    )
+    
+    // Open default email client
+    window.location.href = `mailto:ankit.bcrec.23@gmail.com?subject=${subject}&body=${body}`
+    
+    // Reset form
     setFormData({ name: '', email: '', message: '' })
   }
 
