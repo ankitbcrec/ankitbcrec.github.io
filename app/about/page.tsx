@@ -59,13 +59,13 @@ export default function AboutPage() {
           </p>
           <p className="text-lg text-slate-300 leading-relaxed mb-6">
             With 14+ years of experience across Fortune 500 companies (Verizon, Intuit, Dell, Rogers) 
-            and telecom giants (Reliance Jio, Vodafone Qatar, 2Degrees NZ), I've delivered projects with 
+            and telecom giants (Reliance Jio, Vodafone Qatar, 2Degrees NZ), I&apos;ve delivered projects with 
             measurable impact: $5M+/month revenue uplifts, $120M+ annual billing systems, and enterprise 
             migrations serving millions of users.
           </p>
           <p className="text-lg text-slate-300 leading-relaxed">
             Beyond enterprise work, I build SaaS products and AI tools—from billing engines to browser 
-            automation layers—always pushing the boundary between what's reliable and what's cutting-edge. 
+            automation layers—always pushing the boundary between what&apos;s reliable and what&apos;s cutting-edge. 
             I thrive in the intersection of architecture, AI, and execution.
           </p>
         </motion.div>
