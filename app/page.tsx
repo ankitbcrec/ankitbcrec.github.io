@@ -486,8 +486,8 @@ export default function Home() {
           />
 
           <div className="space-y-8">
-          {experiences.map((exp, idx) => (
-            <ExperienceCard
+            {experiences.map((exp, idx) => (
+              <ExperienceCard
               key={idx}
               role={exp.role}
               company={exp.company}
@@ -497,8 +497,8 @@ export default function Home() {
               teamSize={exp.teamSize}
               index={idx}
             />
-          ))}
-        </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -511,16 +511,16 @@ export default function Home() {
           />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {skillCategories.map((category, idx) => (
-            <SkillCard
+            {skillCategories.map((category, idx) => (
+              <SkillCard
               key={idx}
               icon={category.icon}
               title={category.title}
               skills={category.skills}
               index={idx}
             />
-          ))}
-        </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -533,7 +533,7 @@ export default function Home() {
           />
 
           <div className="mb-12">
-          <div className="flex flex-wrap justify-center gap-4">
+            <div className="flex flex-wrap justify-center gap-4">
             {tabs.map((tab) => (
               <button
                 key={tab.id}
@@ -547,20 +547,20 @@ export default function Home() {
                 {tab.label} ({tab.count})
               </button>
             ))}
+            </div>
           </div>
-        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {getProjects().map((project, idx) => (
-            <ProjectCard
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {getProjects().map((project, idx) => (
+              <ProjectCard
               key={idx}
               title={project.title}
               description={project.description}
               tags={project.tags}
               index={idx}
             />
-          ))}
-        </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -573,10 +573,10 @@ export default function Home() {
           />
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <div className="space-y-8">
-            <div>
-              <h3 className="text-2xl font-bold text-white mb-6">Contact Information</h3>
-              <div className="space-y-4">
+            <div className="space-y-6">
+              <div className="card">
+                <h3 className="text-2xl font-bold text-white mb-6">Contact Information</h3>
+                <div className="space-y-4">
                 <a 
                   href="mailto:ankit.bcrec.23@gmail.com"
                   className="card flex items-center hover:scale-105 transition-transform"
@@ -612,11 +612,11 @@ export default function Home() {
                     <div className="text-white font-semibold">Bengaluru, India</div>
                   </div>
                 </div>
+                </div>
               </div>
-            </div>
 
-            <div>
-              <h3 className="text-2xl font-bold text-white mb-6">Connect With Me</h3>
+              <div className="card">
+                <h3 className="text-2xl font-bold text-white mb-6">Connect With Me</h3>
               <div className="flex gap-4">
                 <a
                   href="https://github.com/ankitchakraborty"
@@ -634,11 +634,11 @@ export default function Home() {
                 >
                   <Linkedin className="h-8 w-8 text-primary-400" />
                 </a>
+                </div>
               </div>
-            </div>
 
-            <div className="card">
-              <h3 className="text-xl font-bold text-white mb-4">Availability</h3>
+              <div className="card">
+                <h3 className="text-2xl font-bold text-white mb-6">Availability</h3>
               <p className="text-slate-300 mb-2">
                 Open to exciting opportunities in:
               </p>
@@ -663,17 +663,17 @@ export default function Home() {
                   <span className="text-primary-400 mr-2">▹</span>
                   Consulting & Advisory
                 </li>
-              </ul>
+                </ul>
+              </div>
             </div>
-          </div>
 
-          <div>
-            <div className="card">
-              <h3 className="text-2xl font-bold text-white mb-6">Send a Message</h3>
-              <ContactForm />
+            <div>
+              <div className="card">
+                <h3 className="text-2xl font-bold text-white mb-6">Send a Message</h3>
+                <ContactForm />
+              </div>
             </div>
           </div>
-        </div>
         </div>
       </section>
     </>
