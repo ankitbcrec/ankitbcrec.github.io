@@ -404,12 +404,13 @@ export default function Home() {
 
       {/* About Section */}
       <section id="about" className="section-container">
-        <SectionHeader 
-          title="About Me" 
-          subtitle="A Builder. An Architect. A Leader."
-        />
+        <div className="max-w-6xl mx-auto">
+          <SectionHeader 
+            title="About Me" 
+            subtitle="A Builder. An Architect. A Leader."
+          />
 
-        <div className="max-w-4xl mx-auto space-y-12">
+          <div className="space-y-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -473,16 +474,18 @@ export default function Home() {
             ))}
           </div>
         </div>
+        </div>
       </section>
 
       {/* Experience Section */}
       <section id="experience" className="section-container bg-slate-950/50">
-        <SectionHeader 
-          title="Experience" 
-          subtitle="14+ years building revenue-critical systems at scale"
-        />
+        <div className="max-w-6xl mx-auto">
+          <SectionHeader 
+            title="Experience" 
+            subtitle="14+ years building revenue-critical systems at scale"
+          />
 
-        <div className="max-w-5xl mx-auto space-y-8">
+          <div className="space-y-8">
           {experiences.map((exp, idx) => (
             <ExperienceCard
               key={idx}
@@ -496,16 +499,18 @@ export default function Home() {
             />
           ))}
         </div>
+        </div>
       </section>
 
       {/* Skills Section */}
       <section id="skills" className="section-container">
-        <SectionHeader 
-          title="Skills & Expertise" 
-          subtitle="Full-stack mastery from architecture to AI"
-        />
+        <div className="max-w-6xl mx-auto">
+          <SectionHeader 
+            title="Skills & Expertise" 
+            subtitle="Full-stack mastery from architecture to AI"
+          />
 
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {skillCategories.map((category, idx) => (
             <SkillCard
               key={idx}
@@ -516,16 +521,18 @@ export default function Home() {
             />
           ))}
         </div>
+        </div>
       </section>
 
       {/* Projects Section */}
       <section id="projects" className="section-container bg-slate-950/50">
-        <SectionHeader 
-          title="Projects" 
-          subtitle="From enterprise billing systems to AI-powered SaaS products"
-        />
+        <div className="max-w-6xl mx-auto">
+          <SectionHeader 
+            title="Projects" 
+            subtitle="From enterprise billing systems to AI-powered SaaS products"
+          />
 
-        <div className="max-w-4xl mx-auto mb-12">
+          <div className="mb-12">
           <div className="flex flex-wrap justify-center gap-4">
             {tabs.map((tab) => (
               <button
@@ -543,7 +550,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {getProjects().map((project, idx) => (
             <ProjectCard
               key={idx}
@@ -554,16 +561,18 @@ export default function Home() {
             />
           ))}
         </div>
+        </div>
       </section>
 
       {/* Contact Section */}
       <section id="contact" className="section-container">
-        <SectionHeader 
-          title="Get In Touch" 
-          subtitle="Let's build something amazing together"
-        />
+        <div className="max-w-6xl mx-auto">
+          <SectionHeader 
+            title="Get In Touch" 
+            subtitle="Let's build something amazing together"
+          />
 
-        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className="space-y-8">
             <div>
               <h3 className="text-2xl font-bold text-white mb-6">Contact Information</h3>
@@ -664,6 +673,7 @@ export default function Home() {
               <ContactForm />
             </div>
           </div>
+        </div>
         </div>
       </section>
     </>
